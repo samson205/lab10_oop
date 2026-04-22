@@ -110,7 +110,7 @@
             </StackPanel>
 
             <GroupBox Header="Прайс-лист" Grid.Column="1" Margin="5">
-                <DataGrid x:Name="PriceGrid" AutoGenerateColumns="False">
+                <DataGrid x:Name="PriceGrid" AutoGenerateColumns="False" SelectedCellsChanged="PriceGrid_SelectedCellsChanged">
 
                     <DataGrid.Columns>
 

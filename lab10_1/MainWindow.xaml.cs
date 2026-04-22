@@ -36,7 +36,6 @@ namespace lab10_1
                 Price = 0,
                 Count = 0
             });
-
             FillListBox();
         }
 
@@ -46,7 +45,6 @@ namespace lab10_1
             {
                 Products.Remove(selected);
             }
-
             FillListBox();
         }
 
@@ -105,6 +103,11 @@ namespace lab10_1
 
             PriceGrid.ItemsSource = null;
             PriceGrid.ItemsSource = sortedProducts;
+            FillListBox();
+        }
+
+        private void PriceGrid_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
             FillListBox();
         }
 
